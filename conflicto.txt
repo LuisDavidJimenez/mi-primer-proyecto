@@ -1,1 +1,2 @@
 Linea comun
+contenido desde rama1
