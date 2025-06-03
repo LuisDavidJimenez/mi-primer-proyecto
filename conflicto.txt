@@ -1,2 +1,3 @@
 Linea comun
 contenido desde rama1
+contenido desde rama2
