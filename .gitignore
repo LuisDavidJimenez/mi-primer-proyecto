@@ -1,1 +1,4 @@
+#Archivos y carpetas ignorados por Git
 carpeta-ignorada/
+
+*.log
