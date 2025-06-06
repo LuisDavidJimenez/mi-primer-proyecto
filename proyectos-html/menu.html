@@ -12,6 +12,11 @@
   <body>
     <header style="text-align: center; background-color: red; padding: 1px">
       <h1 style="color: white">Menú Gourmet</h1>
+      <nav style="padding-bottom: 5px">
+        <a href="#entrantes" style="color: white; padding-right: 10px">Entrantes</a>
+        <a href="#platosprincipales" style="color: white; padding-right: 10px">Platos Principales</a>
+        <a href="#postres" style="color: white">Postres</a>
+      </nav>
     </header>
 
     <main>
@@ -22,6 +27,7 @@
           margin-bottom: 5px;
           float: right;
           border: 2px solid black;
+          background-color: white;
         "
       >
         <h4 style="margin: 0; padding: 5px">Otros Proyectos:</h4>
@@ -43,13 +49,16 @@
               Menú Gourmet
             </a>
           </li>
+          <li><a href="./formulario.html"> Contacto </a></li>
         </ul>
       </aside>
 
       <!-- Entrantes -->
       <section id="entrantes" style="margin-right: 10%; margin-left: 10%">
         <div>
-          <h2 style="margin-bottom: 5px; text-align: center;"><u>Entrantes</u></h2>
+          <h2 style="margin-bottom: 5px; text-align: center; margin-top: 5px">
+            <u>Entrantes</u>
+          </h2>
           <ul style="list-style: none; padding: 0; margin: 0">
             <li style="display: flex; align-items: center; margin-bottom: 0">
               <img
@@ -80,9 +89,7 @@
             >
               <div style="margin-right: 1em">
                 <b>Miniquiches</b> - 20€ <br />
-                <em
-                  >Calabacín rallado, nata, jamón y masa de quiche.</em
-                >
+                <em>Calabacín rallado, nata, jamón y masa de quiche.</em>
               </div>
               <img
                 src="./img/miniquiches.png"
@@ -175,7 +182,7 @@
       <hr style="margin-left: 5%; margin-right: 5%" />
       <!-- Postres -->
       <section id="postres" style="margin-left: 5%; margin-right: 5%">
-        <h2 style="text-align: center; margin-top: 5px; margin-bottom: 5px;">
+        <h2 style="text-align: center; margin-top: 5px; margin-bottom: 5px">
           <u>Postres</u>
         </h2>
         <div
@@ -216,5 +223,25 @@
         </div>
       </section>
     </main>
+
+    <footer
+      style="
+        background-color: #333;
+        color: #fff;
+        padding: 1px;
+        text-align: center;
+        margin-top: 1px;
+      "
+    >
+      <p>
+        2025 &copy; Menú Gourmet &copy;
+        <a
+          href="./formulario.html"
+          target="_blank"
+          style="text-decoration: none; color: grey"
+          >Contactanos!</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
