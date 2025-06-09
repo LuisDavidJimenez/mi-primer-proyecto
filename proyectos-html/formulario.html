@@ -7,6 +7,7 @@
       name="description"
       content="Pruebas con Audios, Videos y Formularios en entornos html."
     />
+    <link rel="stylesheet" href="./css/formularios.css" />
     <title>Audio, Video y Formulario</title>
   </head>
   <body>
@@ -72,8 +73,7 @@
         </h2>
         <audio controls style="width: 100%; max-width: 400px">
           <source
-            src="https://cdn.pixabay.com/audio/2025/02/02/21-12-50-41_200x200.png
-"
+            src="https://cdn.pixabay.com/audio/2025/05/04/audio_cac445e5d7.mp3"
             type="audio/mpeg"
           />
           Tu navegador no soporte el elemento de audio.
@@ -109,6 +109,99 @@
           >
         </p>
       </section>
+
+      <hr />
+
+      <!-- Formulario -->
+      <section id="fondoformulario">
+        <h2 id="formulario">Formulario</h2>
+        <form action="#enlace" method="post">
+          <fieldset>
+            <legend><b>Información Personal</b></legend>
+            <label for="nombre">
+              Escribe tu Nombre de Usuario:
+              <input type="text" name="nombre" id="nombre" required />
+            </label>
+            <label for="edad">
+              Introduce tu edad:
+              <input
+                type="number"
+                min="0"
+                max="99"
+                name="edad"
+                id="edad"
+                required
+              />
+            </label>
+            <label for="descubierto">
+              ¿Cómo nos has descubierto?
+              <select name="descubierto" id="descubierto">
+                <option value="1">Canal de Youtube</option>
+                <option value="2">Canal de LinkedIn</option>
+                <option value="3">Canal de Telegram</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend><b>Información sobre la Cuenta</b></legend>
+            <label for="correo">
+              Escribe tu Correo:
+              <input type="email" id="correo" pattern="@" required />
+            </label>
+            <label for="password">
+              Escribe tu Contraseña:
+              <input type="password" id="password" minlength="8" required />
+            </label>
+            <label for="profile">
+              Introduce una Foto de Perfil: <br />
+              <input type="file" id="profile" />
+            </label>
+            <div id="tipo-cuenta">
+              <label for="personal" id="borroso">
+                <input
+                  type="radio"
+                  id="personal"
+                  name="tipo-cuenta"
+                  class="inline"
+                />
+                Cuenta Personal
+              </label>
+              <label for="empresa" id="borroso">
+                <input
+                  type="radio"
+                  id="empresa"
+                  name="tipo-cuenta"
+                  class="inline"
+                />
+                Cuenta de Empresa
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend id="borroso"><b>Información Adicional</b></legend>
+            <label for="infoad">
+              <textarea id="borroso"
+                placeholder="Información Adicional Sobre ti..."
+                name="infoad"
+                id="infoad"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <label for="calendario" id="borroso">
+              Selecciona tu cita:
+              <input type="date" name="" id="" />
+            </label>
+            <label for="termino">
+              <div id="borroso">
+                <input type="checkbox" name="termino" id="termino" />
+                Acepta nuestros Términos y Condiciones
+              </div>
+            </label>
+            <input id="boton" type="button" value="Enviar" />
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer
@@ -123,7 +216,7 @@
       <p>
         2025 &copy; Audio, Video y Formulario &copy;
         <a
-          href="https://twitter.com/FabrizioRomano"
+          href="./formulario.html"
           target="_blank"
           style="text-decoration: none; color: grey"
           >Contactanos!</a

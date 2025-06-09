@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+    "zheader zheader"
+    "znav zmain"
+    "zfooter zfooter";
+}
+
+nav {
+    border: 3px solid green;
+    grid-area: znav;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    transition: background-color, 0.3s ease, color 0.5s ease;
+}
+
+header {
+    border: 3px solid white;
+    grid-area: zheader;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    border: 3px solid yellow;
+    padding: 5px 0px 0px 10px;
+    grid-area: zmain;
+    background-color: lightgreen;
+}
+
+footer {
+    border: 3px solid white;
+    grid-area: zfooter;
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
