@@ -81,6 +81,10 @@ textarea {
   box-sizing: border-box;
 }
 
+textarea:focus {
+  border: 1px rgb(137, 137, 255) solid;
+}
+
 label {
   display: block;
   color: #1b0597;
