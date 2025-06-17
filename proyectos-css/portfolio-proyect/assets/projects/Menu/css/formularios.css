@@ -1,0 +1,113 @@
+main p {
+  margin-bottom: 1px;
+}
+
+main hr {
+  margin-top: 1px;
+}
+
+#fondoformulario {
+  background: url("https://i.pinimg.com/736x/33/01/64/33016457ee3bb2c6f1979ca07a675e5c.jpg");
+  /* background-color: rgb(255, 211, 189); */
+  background-size: cover;
+  margin: 0 23% 5px;
+  border-radius: 2%;
+  padding-bottom: 5px;
+  border: 2px solid black;
+}
+
+#formulario {
+  margin: 0 0 5px 0;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+form {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 3px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  width: 97%;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#borroso::placeholder {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+#borroso {
+  display: inline-block;
+  padding-right: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+label[for="profile"] {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+#boton {
+  display: block;
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#boton:hover {
+  background-color: #023176;
+  transition: background-color 0.3s ease;
+}
+
+#tipo-cuenta {
+  display: flex;
+  gap: 5%;
+  margin: 0 auto;
+  justify-content: center;
+}

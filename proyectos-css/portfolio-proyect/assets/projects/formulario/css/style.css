@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+  background: url("https://i.pinimg.com/736x/87/72/4b/87724bfbe938a7202fa6faedeb5b2e06.jpg");
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  background-repeat: unset;
+  background-size: cover;
+  font-size: 14px;
+}
+
+.container {
+  border: 10px solid #0a0044;
+  border-radius: 40px;
+  width: 80%;
+  margin: 50px auto;
+  background: linear-gradient(to left, #2c5364, #203a43, #0f2027);
+  color: white;
+}
+
+.contact-box {
+  display: flex;
+  background-color: white;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.contact-left {
+  border-bottom-left-radius: 30px;
+  padding: 40px;
+  flex-basis: 50%; /* Ocupa el 40% del Espacio diponible */
+}
+
+.contact-right {
+  color: white;
+  padding: 40px;
+  background-color: #0a0044;
+  border-bottom-right-radius: 25px;
+  flex-basis: 50%; /* Ocupa el 40% del Espacio diponible */
+}
+
+.container h1,
+.container p {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-row .input-group {
+  flex-flow: 45%;
+}
+
+.input-group input:focus {
+  border-bottom: 1px rgb(137, 137, 255) solid;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border: 1px rgb(137, 137, 255) solid;
+}
+
+label {
+  display: block;
+  color: #1b0597;
+  font-size: 18px;
+}
+
+.contact-left h3 {
+  font-size: 2rem;
+  color: brown;
+}
+
+.contact-right h3 {
+  color: cadetblue;
+  font-size: 2rem;
+}
+
+.contact-right table td {
+  padding: 20px;
+  font-size: 1rem;
+  border-bottom: 1px cadetblue solid;
+}
+
+button {
+  background: #1b0597;
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 35px;
+  color: white;
+  border-radius: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: box-shadow, 0.3s ease;
+  box-shadow: 5px 5px 15px 0px rgb(108, 108, 237);
+}
+
+@media (min-width: 1700px) {
+  .container {
+    width: 60%;
+  }
+}

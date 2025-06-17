@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Ejercicios Matematicos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios Matematicos Interactivos</h1>
+      <nav>
+        <ul>
+          <li class="activo"><a href="../ejerciciosMatematicos/index.html">Matematicas</a></li>
+          <li><a href="../ejerciciosMatematicos2/index.html">Matematicas 2</a></li>
+          <li><a href="../ejerciciosMatematicos3/index.html">Matematicas 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>1. Perimetro de un rectángulo</h2>
+          <label>Base:</label>
+          <input type="number" id="baseRec" placeholder="Ingresa la Base" />
+          <label>Altura:</label>
+          <input type="number" id="alturaRec" placeholder="Ingresa la Altura" />
+          <button onclick="PerimetroRectangulo()">Calcular</button>
+          <p id="salidaPerim"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>2. Celsius a Fahrenheit</h2>
+          <label>Grados Celsius:</label>
+          <input type="number" id="temp" placeholder="ºC" />
+          <button onclick="Temperatura()">Convertir</button>
+          <p id="salidaCel"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>3. Área de un triángulo</h2>
+          <label>Base:</label>
+          <input type="number" id="baseTria" placeholder="Ingresa la Base" />
+          <label>Altura:</label>
+          <input type="number" id="alturaTria" placeholder="Ingresa la Altura" />
+          <button onclick="AreaTriangulo()">Calcular</button>
+          <p id="salidaArea"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>4. Circunferencia de un circulo</h2>
+          <label>Radio:</label>
+          <input type="number" id="radio" placeholder="Ingresa el Radio" />
+          <button onclick="CircunferenciaCirculo()">Calcular</button>
+          <p id="salidaCircular"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>5. Precio con descuento</h2>
+          <label>Precio original:</label>
+          <input type="number" id="precio" placeholder="€" />
+          <label>Descuento (%):</label>
+          <input type="number" id="porcentaje" placeholder="Porcentaje" />
+          <button onclick="Descuento()">Calcular</button>
+          <p id="salidaPrecio"></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

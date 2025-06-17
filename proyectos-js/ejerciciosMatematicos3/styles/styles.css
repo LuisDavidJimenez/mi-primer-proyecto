@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightcyan;
+}
+
+header h1 {
+  text-align: center;
+  color: rgb(59, 161, 57);
+  margin: 20px 20px 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+nav ul li {
+    margin: 5px 0px;
+}
+
+nav ul li a {
+  background-color: rgb(78, 254, 93);
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.activo {
+  background-color: green;
+  color: white;
+  pointer-events: none;
+}
+
+.cuerpo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.operaciones {
+  display: inline-block;
+  width: 15%;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido h2 {
+  color: rgb(87, 167, 76);
+}
+
+.contenido label {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.contenido input {
+  padding: 8px;
+  border: 0.1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.contenido button {
+  margin-top: 10px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: black;
+  border: none;
+  background-color: rgb(78, 254, 93);
+}
+
+.contenido button:hover,
+nav ul li a:hover {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  transition: background, 0.6s ease;
+  transition: color, 0.6s ease;
+}
+
+.contenido p {
+  margin-top: 10px;
+  color: rgb(64, 138, 59);
+  font-weight: bold;
+}

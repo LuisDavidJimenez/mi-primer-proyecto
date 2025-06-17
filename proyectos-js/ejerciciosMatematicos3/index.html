@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Ejercicios Matematicos 3</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios Matematicos Interactivos 3</h1>
+      <nav>
+        <ul>
+          <li><a href="../ejerciciosMatematicos/index.html">Matematicas</a></li>
+          <li>
+            <a href="../ejerciciosMatematicos2/index.html">Matematicas 2</a>
+          </li>
+          <li>
+            <a href="../ejerciciosMatematicos3/index.html" class="activo">Matematicas 3</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cuerpo">
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>1. Euros a Dolares</h2>
+          <label>Euros:</label>
+          <input type="number" id="euro" placeholder="€" />
+          <button onclick="EuroDolares()">Convertir</button>
+          <p id="salidaDolar"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>2. Velocidad Media</h2>
+          <label>Kilometros:</label>
+          <input type="number" id="km" placeholder="Km" />
+          <label>Horas:</label>
+          <input type="number" id="hora" placeholder="h" />
+          <button onclick="Velocidad()">Convertir</button>
+          <p id="salidaVelocidad"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>3. Área de un trapecio</h2>
+          <label>Base 1:</label>
+          <input type="number" id="base1" placeholder="Ingresa la Base" />
+          <label>Base 2:</label>
+          <input type="number" id="base2" placeholder="Ingresa la Base" />
+          <label>Altura:</label>
+          <input
+            type="number"
+            id="alturatrap"
+            placeholder="Ingresa la Altura"
+          />
+          <button onclick="AreaTrapecio()">Calcular</button>
+          <p id="salidaTrapecio"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>4. Tabla de Multiplicar</h2>
+          <label>Numero:</label>
+          <input type="number" id="numTabla" placeholder="Ingresa el número" />
+          <button onclick="TablaMultiplicar()">Calcular</button>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>5. Comprobar Divisibilidad</h2>
+          <label>Numero 1:</label>
+          <input type="number" id="div1" placeholder="Introduce un número" />
+          <label>Numero 2:</label>
+          <input type="number" id="div2" placeholder="Introduce un número" />
+          <button onclick="Divisibilidad()">Calcular</button>
+          <p id="salidaDivis"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

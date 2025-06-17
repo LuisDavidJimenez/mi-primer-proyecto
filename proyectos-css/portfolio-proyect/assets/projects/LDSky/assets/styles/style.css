@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("https://cdns3.eltiempo.es/eltiempo/blog/noticias/2019/03/11135102/cumulus_tipos-de-nubes.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400px;
+}
+
+.link:hover {
+  color: rgb(0, 0, 0);
+  padding: 40px;
+  transition: color, 0.3s ease;
+  background: url('https://cdn.pixabay.com/photo/2017/06/20/04/42/cloud-2421760_1280.png');
+  background-position: center;
+  background-size:cover ;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.logn-btn {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+  font-weight: 400px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 20px;
+  color: #fff;
+  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+}
+
+.content {
+  margin-top: 10%;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 50px;
+  color: #222;
+}
+
+.content p {
+  margin: 10px 0 10px;
+  color: #333;
+  animation-delay: 0.5s;
+}
+
+.content .btn, .content .avion{
+  padding: 15px 80px;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+
+.button-container {
+  position: relative;
+  display: inline-block;
+  perspective: 1000px;
+}
+
+.avion {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 20px;
+  color: #fff;
+  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateX(-1000px);
+  animation: moveup 2s linear forwards;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
+
+.avion:hover {
+  color: transparent;
+  border-top-right-radius: 30px;
+  background-image: linear-gradient(45deg, #df4881, #c430d7, #ffd900);
+}
+
+.btn:hover {
+  border-top-right-radius: 30px;
+  background-image: linear-gradient(45deg, #df4881, #c430d7, #ffd900);
+}
+
+.feature-img {
+  width: 530px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.feature-img.anim {
+  animation-delay: 1.5s;
+}
+
+.anim {
+  opacity: 0;
+  transform: translateX(-1000px);
+  animation: moveup 2s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.plane {
+  position: absolute;
+  top: 10px;
+  left: -30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  opacity: 0;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+.avion:hover .plane {
+  color: white;
+  animation: fly-across 1s ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes fly-across {
+  0% {
+    left: -30px;
+    opacity: 1;
+  }
+  90% {
+    left: 90%;
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}

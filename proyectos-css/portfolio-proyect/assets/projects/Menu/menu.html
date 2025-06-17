@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Menú Gourmet con las especialidades David: entradas, platos fuertes y postres."
+    />
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Menu de Cocina</title>
+  </head>
+  <body>
+    <header style="text-align: center; background-color: red; padding: 1px">
+      <h1 style="color: white">Menú Gourmet</h1>
+      <nav style="padding-bottom: 5px">
+        <a href="#entrantes" style="color: white; padding-right: 10px">Entrantes</a>
+        <a href="#platosprincipales" style="color: white; padding-right: 10px">Platos Principales</a>
+        <a href="#postres" style="color: white">Postres</a>
+      </nav>
+    </header>
+
+    <main>
+      <aside
+        style="
+          width: 160px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          float: right;
+          border: 2px solid black;
+          background-color: white;
+        "
+      >
+        <h4 style="margin: 0; padding: 5px">Otros Proyectos:</h4>
+        <ul
+          style="
+            font-size: 16px;
+            margin-top: 2px;
+            margin-bottom: 0;
+            padding-right: 5px;
+            padding-bottom: 5px;
+          "
+        >
+          <li><a href="./index.html"> Inicio </a></li>
+          <li>
+            <a
+              href="./menu.html"
+              style="pointer-events: none; text-decoration: none; color: black"
+            >
+              Menú Gourmet
+            </a>
+          </li>
+          <li><a href="./formulario.html"> Contacto </a></li>
+        </ul>
+      </aside>
+
+      <!-- Entrantes -->
+      <section id="entrantes" style="margin-right: 10%; margin-left: 10%">
+        <div>
+          <h2 style="margin-bottom: 5px; text-align: center; margin-top: 5px">
+            <u>Entrantes</u>
+          </h2>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="display: flex; align-items: center; margin-bottom: 0">
+              <img
+                src="./img/bruschetta.png"
+                alt="Bruschetta Tradicional"
+                width="200px"
+                style="border-radius: 20px; margin-right: 1px"
+              />
+              <div style="margin-left: 1em">
+                <b>Bruschetta Tradicional</b> - 80€ <br />
+                <em
+                  >Pan tostado, tomate, albaca y aceite de olvida virgen
+                  extra</em
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div style="text-align: right">
+          <ul style="list-style: none; margin: 0">
+            <li
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-bottom: 1em;
+              "
+            >
+              <div style="margin-right: 1em">
+                <b>Miniquiches</b> - 20€ <br />
+                <em>Calabacín rallado, nata, jamón y masa de quiche.</em>
+              </div>
+              <img
+                src="./img/miniquiches.png"
+                alt="miniquiches"
+                width="200px"
+                style="border-radius: 20px; margin-right: 1px"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr style="margin-left: 5%; margin-right: 5%" />
+      <!-- Platos principales -->
+      <section
+        id="platosprincipales"
+        style="margin-left: 10%; margin-right: 10%"
+      >
+        <h2
+          style="
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 5px;
+            margin-top: 5px;
+          "
+        >
+          <u>Platos Principales</u>
+        </h2>
+
+        <table
+          style="
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+          "
+        >
+          <tr slot="background-color: #e0e0e0;">
+            <th style="border: 1px solid black">Plato</th>
+            <th style="border: 1px solid black">Descripcion</th>
+            <th style="border: 1px solid black">Precio</th>
+          </tr>
+          <tr style="border-bottom: 1px dotted black">
+            <th style="display: block; align-items: center; padding: 5px">
+              <i>Rissotto con Setas</i> <br />
+              <img
+                src="./img/risotto.png"
+                alt="Rissoto con Setas"
+                height="100px"
+                style="border-radius: 20px"
+              />
+            </th>
+            <th><b>Arroz Cermoso con Setas y Queso Parmesano</b></th>
+            <th>180€</th>
+          </tr>
+          <tr style="border-bottom: 1px dotted black">
+            <th style="display: block; align-items: center; padding: 5px">
+              <i>Ensalada César</i> <br />
+              <img
+                src="./img/cesar.png"
+                alt="Ensalada César"
+                height="100px"
+                style="border-radius: 20px"
+              />
+            </th>
+            <th>
+              <b>Lechuga Romana, Crutones, Queso Parmesano, Salsa César</b>
+            </th>
+            <th>200€</th>
+          </tr>
+          <tr style="border-bottom: 1px dotted black">
+            <th style="display: block; align-items: center; padding: 5px">
+              <i>Filete Tomahawk</i> <br />
+              <img
+                src="./img/tomahawk.png"
+                alt="Filete Tomahawk"
+                height="100px"
+                style="border-radius: 20px"
+              />
+            </th>
+            <th>
+              <b>
+                Costilla con Sal Marina y Pimienta Negra, Papas Rústicas y
+                Vegetales Asados</b
+              >
+            </th>
+            <th>400€</th>
+          </tr>
+        </table>
+      </section>
+      <hr style="margin-left: 5%; margin-right: 5%" />
+      <!-- Postres -->
+      <section id="postres" style="margin-left: 5%; margin-right: 5%">
+        <h2 style="text-align: center; margin-top: 5px; margin-bottom: 5px">
+          <u>Postres</u>
+        </h2>
+        <div
+          style="display: flex; gap: 5%; width: 100%; justify-content: center"
+        >
+          <div style="text-align: center">
+            <img
+              src="./img/tartaqueso.png"
+              alt="Tarta de Queso"
+              height="100px"
+            /><br />
+            <b>Tarta de Queso</b> - 20€
+          </div>
+          <div style="text-align: center">
+            <img
+              src="./img/healdo.png"
+              alt="Helado de Vainilla"
+              height="100px"
+            /><br />
+            <b>Helado de Vainilla</b> - 15€
+          </div>
+          <div style="text-align: center">
+            <img
+              src="./img/mousse.png"
+              alt="Mousse de Chocolate"
+              height="100px"
+            /><br />
+            <b>Mousse de Chocolate</b> - 20€
+          </div>
+          <div style="text-align: center">
+            <img
+              src="./img/fruta.png"
+              alt="Fruta Variada"
+              height="100px"
+            /><br />
+            <b>Fruta Variada</b> - 10€
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      style="
+        background-color: #333;
+        color: #fff;
+        padding: 1px;
+        text-align: center;
+        margin-top: 1px;
+      "
+    >
+      <p>
+        2025 &copy; Menú Gourmet &copy;
+        <a
+          href="./formulario.html"
+          target="_blank"
+          style="text-decoration: none; color: grey"
+          >Contactanos!</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual,
+    cursive;
+  font-weight: normal;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 60px 1fr 30px;
+  grid-template-areas:
+    "zheader zheader"
+    "znav    zgallery"
+    "zfooter zfooter";
+  background: url("https://img.freepik.com/foto-gratis/fondo-papel-quemado-estilo-grunge_1048-7965.jpg");
+  background-size: cover;
+}
+
+header {
+  grid-area: zheader;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+header h3 {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  background-color: rgb(68, 32, 32);
+}
+
+nav {
+  grid-area: znav;
+  max-width: 100%;
+  padding: 1rem;
+  overflow-wrap: break-word;
+}
+
+nav ul {
+  list-style: none;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border: 5px solid burlywood;
+  border-radius: 20px;
+}
+
+nav ul li {
+  border: 1px solid burlywood;
+}
+
+.nav-button {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-button:hover {
+  color: white;
+  transition: color, 0.3s ease;
+}
+
+.gallery-portada {
+  margin: 30px;
+  grid-area: zgallery;
+}
+
+.gallery-portada img {
+  height: 400px;
+  pointer-events: none;
+  justify-content: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+.gallery {
+  grid-area: zgallery;
+  display: grid;
+  gap: 2rem;
+  grid-auto-rows: auto;
+  justify-content: center;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb img {
+  border: 1px solid #444;
+  border-radius: 0.5rem;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.thumb img:hover {
+  border-radius: 1rem;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px white;
+}
+
+footer {
+  grid-area: zfooter;
+  color: white;
+  background-color: #444;
+  text-align: center;
+  padding: 2px;
+}
+
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: 60px auto 1fr 30px;
+    grid-template-areas:
+      "zheader"
+      "znav"
+      "zgallery"
+      "zfooter";
+  }
+
+  .gallery-portada {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  nav ul li {
+    border: 0px;
+  }
+
+  #barras {
+    border-left: 1px solid burlywood;
+    border-right: 1px solid burlywood;
+  }
+
+  header {
+    margin-top: 10px;
+  }
+
+  .gallery {
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    justify-content: end;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    grid-template-columns: 20% 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+
+  nav {
+    padding: 20px 0px 0px 10px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1400px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .thumb img {
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 1401px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .thumb img {
+    object-fit: contain;
+  }
+}

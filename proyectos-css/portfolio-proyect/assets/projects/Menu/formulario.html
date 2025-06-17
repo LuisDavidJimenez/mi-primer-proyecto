@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pruebas con Audios, Videos y Formularios en entornos html."
+    />
+    <link rel="stylesheet" href="./css/formularios.css" />
+    <title>Audio, Video y Formulario</title>
+  </head>
+  <body>
+    <header style="text-align: center; background-color: green; padding: 1px">
+      <h1 style="color: #ffffff">Audio, Video y Formulario</h1>
+      <nav style="padding-bottom: 5px">
+        <a href="#texto" style="color: #ffffff; padding-right: 10px">Textos</a>
+        <a href="#lista" style="color: #ffffff; padding-right: 10px">Listas</a>
+        <a href="#tabla" style="color: #ffffff">Tablas</a>
+      </nav>
+    </header>
+
+    <main>
+      <aside
+        style="
+          width: 160px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          float: right;
+          border: 2px solid black;
+          background-color: white;
+        "
+      >
+        <h4 style="margin: 0; padding: 5px">Otros Proyectos:</h4>
+        <ul
+          style="
+            font-size: 16px;
+            margin-top: 2px;
+            margin-bottom: 0;
+            padding-right: 5px;
+            padding-bottom: 5px;
+          "
+        >
+          <li>
+            <a href="./index.html"> Inicio </a>
+          </li>
+          <li><a href="./menu.html"> Menú Gourmet </a></li>
+          <li>
+            <a
+              href="./formulario.html"
+              style="pointer-events: none; text-decoration: none; color: black"
+            >
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Audio -->
+      <h2 style="margin-bottom: 3px; margin-top: 5px">
+        <u>Reproductor de Audio</u>
+      </h2>
+      <audio controls>
+        <source src="./audio/rock.mp3" type="audio/mpeg" />
+        Tu navegador no soporte el elemento de audio.
+      </audio>
+
+      <hr />
+
+      <section id="demo-audio">
+        <h2 style="margin-bottom: 3px; margin-top: 5px">
+          <u>Demo Audio</u>
+        </h2>
+        <audio controls style="width: 100%; max-width: 400px">
+          <source
+            src="https://cdn.pixabay.com/audio/2025/05/04/audio_cac445e5d7.mp3"
+            type="audio/mpeg"
+          />
+          Tu navegador no soporte el elemento de audio.
+        </audio>
+        <p style="margin-top: 2px">
+          <em>Pruebalo: Haz clic en el reproductor para escuchar el audio.</em>
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Video -->
+      <h2 style="margin-bottom: 3px; margin-top: 5px">
+        <u>Reproductor de Video </u>
+      </h2>
+      <video width="100%" height="360" style="max-width: 500px" controls muted>
+        <source src="./video/video2.mp4" type="video/mp4" />
+        Tu navegador no soporte el elemento de video.
+      </video>
+
+      <section>
+        <h2 style="margin-bottom: 3px; margin-top: 5px">
+          <u>Demo Video </u>
+        </h2>
+        <video width="240" autoplay muted loop>
+          <source src="./video/video2.mp4" type="video/mp4" />
+          Tu navegador no soporte el elemento de video.
+        </video>
+        <p style="margin-top: 2px">
+          <em
+            >Video de Lionel Andrés 'Messi' Cuccittini, el mejor jugador de la
+            historia en tocar un balón de fútbol.</em
+          >
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Formulario -->
+      <section id="fondoformulario">
+        <h2 id="formulario">Formulario</h2>
+        <form action="#enlace" method="post">
+          <fieldset>
+            <legend><b>Información Personal</b></legend>
+            <label for="nombre">
+              Escribe tu Nombre de Usuario:
+              <input type="text" name="nombre" id="nombre" required />
+            </label>
+            <label for="edad">
+              Introduce tu edad:
+              <input
+                type="number"
+                min="0"
+                max="99"
+                name="edad"
+                id="edad"
+                required
+              />
+            </label>
+            <label for="descubierto">
+              ¿Cómo nos has descubierto?
+              <select name="descubierto" id="descubierto">
+                <option value="1">Canal de Youtube</option>
+                <option value="2">Canal de LinkedIn</option>
+                <option value="3">Canal de Telegram</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend><b>Información sobre la Cuenta</b></legend>
+            <label for="correo">
+              Escribe tu Correo:
+              <input type="email" id="correo" pattern="@" required />
+            </label>
+            <label for="password">
+              Escribe tu Contraseña:
+              <input type="password" id="password" minlength="8" required />
+            </label>
+            <label for="profile">
+              Introduce una Foto de Perfil: <br />
+              <input type="file" id="profile" />
+            </label>
+            <div id="tipo-cuenta">
+              <label for="personal" id="borroso">
+                <input
+                  type="radio"
+                  id="personal"
+                  name="tipo-cuenta"
+                  class="inline"
+                />
+                Cuenta Personal
+              </label>
+              <label for="empresa" id="borroso">
+                <input
+                  type="radio"
+                  id="empresa"
+                  name="tipo-cuenta"
+                  class="inline"
+                />
+                Cuenta de Empresa
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend id="borroso"><b>Información Adicional</b></legend>
+            <label for="infoad">
+              <textarea id="borroso"
+                placeholder="Información Adicional Sobre ti..."
+                name="infoad"
+                id="infoad"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+            <label for="calendario" id="borroso">
+              Selecciona tu cita:
+              <input type="date" name="" id="" />
+            </label>
+            <label for="termino">
+              <div id="borroso">
+                <input type="checkbox" name="termino" id="termino" />
+                Acepta nuestros Términos y Condiciones
+              </div>
+            </label>
+            <input id="boton" type="button" value="Enviar" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer
+      style="
+        background-color: #333;
+        color: #fff;
+        padding: 1px;
+        text-align: center;
+        margin-top: 1px;
+      "
+    >
+      <p>
+        2025 &copy; Audio, Video y Formulario &copy;
+        <a
+          href="./formulario.html"
+          target="_blank"
+          style="text-decoration: none; color: grey"
+          >Contactanos!</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
