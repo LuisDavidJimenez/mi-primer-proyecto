@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Ejercicios Bucles</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios con Bucles</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="../ejerciciosBucles/index.html" class="activo">Bucles</a>
+          </li>
+          <li><a href="../ejerciciosBucles2/index.html">Bucles 2</a></li>
+          <li><a href="../ejerciciosBucles3/index.html">Bucles 3</a></li>
+          <li><a href="../ejerciciosBucles4/index.html">Bucles 4</a></li>
+          <li><a href="../ejerciciosBucles5/index.html">Bucles 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cuerpo">
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>1. Tarifa Taxi (Madrid)</h2>
+          <label>Kilometros:</label>
+          <input type="number" id="kmRecorrer" placeholder="Km" />
+          <button onclick="TaxiSaldo()">Calcular</button>
+          <p id="salidaCuenta"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>2. Indice de Masa Corporal (IMC)</h2>
+          <label>Peso:</label>
+          <input type="number" id="peso" placeholder="Kg" />
+          <label>Altura:</label>
+          <input type="number" id="alturaMasa" placeholder="cm" />
+          <button onclick="IndiceMasa()">Calcular</button>
+          <p id="salidaMasa"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>3. Correo Electronico</h2>
+          <label>Correo:</label>
+          <input type="email" id="mail" />
+          <button onclick="Registrar()">Registrar</button>
+          <p id="Salidamail"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>4. Fibonacci</h2>
+          <label>Numero:</label>
+          <input type="number" id="fibonacci" placeholder="Intoduce un numero"/>
+          <button onclick="Fibonacci()">Calcular</button>
+          <p id="salidaFibo"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>5. Mesaje Repetido</h2>
+          <label>Mensaje:</label>
+          <input type="text" id="textomensaje" placeholder="Introduce un Mensaje"/>
+          <label>Repeticiones:</label>
+          <input type="number" id="numeromensaje" placeholder="Introduce un Numero"/>
+          <button onclick="RepetirMensaje()">Repetir</button>
+          <p id="salidaMen"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

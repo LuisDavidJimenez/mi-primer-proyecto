@@ -1,11 +1,19 @@
-function EuroDolares() {
+async function EuroDolares() {
   const euro = parseFloat(document.getElementById("euro").value);
 
   if (!isNaN(euro)) {
-    const resultado = euro * 1.16;
+    try {
+      const respuesta = await fetch("https://api.fxratesapi.com/latest?base=EUR");
+      const datos = await respuesta.json();
+      const tasa = datos.rates.USD;
 
-    document.getElementById("salidaDolar").textContent =
-      "Dolares: " + resultado.toFixed(2);
+
+      const resultado = euro * tasa;
+      document.getElementById("salidaDolar").textContent =
+        "Dolares: " + resultado.toFixed(2) + "$";
+    } catch (error) {
+      console.error("Error al obtener la tasa de cambio:", error);
+    }
   }
 }
 

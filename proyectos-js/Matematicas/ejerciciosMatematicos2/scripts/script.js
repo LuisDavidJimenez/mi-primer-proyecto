@@ -3,7 +3,7 @@ function Hipotenusa() {
   const cateto2 = parseFloat(document.getElementById("long2").value);
 
   if (!isNaN(cateto1) && !isNaN(cateto2)) {
-    const resultado = Math.sqrt(cateto1 * cateto1 + cateto2 * cateto2);
+    const resultado = Math.hypot(cateto1, cateto2);
 
     document.getElementById("salidaHipo").textContent =
       "Hipotenusa: " + resultado.toFixed(2);

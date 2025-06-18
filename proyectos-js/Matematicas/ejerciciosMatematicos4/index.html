@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Ejercicios Matematicos 4</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios Matematicos Interactivos 3</h1>
+      <nav>
+        <ul>
+          <li><a href="../ejerciciosMatematicos/index.html">Matematicas</a></li>
+          <li>
+            <a href="../ejerciciosMatematicos2/index.html">Matematicas 2</a>
+          </li>
+          <li>
+            <a href="../ejerciciosMatematicos3/index.html">Matematicas 3</a>
+          </li>
+          <li>
+            <a href="../ejerciciosMatematicos4/index.html" class="activo">Matematicas 4</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cuerpo">
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>1. Positivo o Negativo</h2>
+          <label>Numero:</label>
+          <input type="number" id="numeroPosNeg" placeholder="Ingresa el numero" />
+          <button onclick="PositivoNegativo()">Convertir</button>
+          <p id="salidaPositivo"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>2. Elige una fruta</h2>
+          <label>Numero de Fruta:</label>
+          <input type="number" id="numFruta" placeholder="Ingresa el numero" />
+          <button onclick="Fruta()">Mostrar</button>
+          <p id="salidaFruta"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>3. Suma del 1 al n</h2>
+          <label>Numero:</label>
+          <input type="number" id="numFor" placeholder="Ingresa el numero" />
+          <button onclick="SumaFor()">Calcular</button>
+          <p id="salidaFor"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>4. Cuenta Regresiva</h2>
+          <label>Numero:</label>
+          <input type="number" id="numRegresiva" placeholder="Ingresa el número" />
+          <button onclick="CuentaRegresiva()">Calcular</button>
+          <p id="salidaCuenta"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>5. Adivina la Palabra</h2>
+          <button onclick="AdivinaPalabra()">Adivinar</button>
+          <p id="salidaAdiv"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js"></script>
+    <title>Adivina el Personaje</title>
+  </head>
+  <body>
+    <section>
+      <div class="cartel">
+        <img src="./img/Logo.png" alt="Logo de la pagina" />
+      </div>
+      <div class="adivinar">
+        <h1>
+          <i><u>Animacion - Disney</u></i>
+        </h1>
+        <div class="filas">
+          <div id="borde">
+            <h3 class="espacio">Frase 1</h3>
+            <p class="espacio">¿Amigo o enemigo?</p>
+          </div>
+          <div id="borde">
+            <h3 class="espacio">Frase 2</h3>
+            <p class="oculto espacio" id="Buzz-pista2">
+              Ser un juguete es mejor que ser un guardián del espacio
+            </p>
+          </div>
+          <div>
+            <h3 class="espacio">Frase 3</h3>
+            <p class="oculto" id="Buzz-pista3">Hasta el infinito y mas alla!</p>
+          </div>
+        </div>
+        <button onclick="Adivinar(1)">Adivinar</button>
+        <img
+          src="./img/Buzz.png"
+          alt="Imagen Adivinanza 1"
+          width="150px"
+          class="oculto"
+          id="buzz"
+        />
+        <p id="respuestaBuzz"></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="adivinar">
+        <h1>
+          <i><u>Superhéroes</u></i>
+        </h1>
+        <div class="filas">
+          <div id="borde">
+            <h3 class="espacio">Frase 1</h3>
+            <p class="espacio">A tu izquierda</p>
+          </div>
+          <div id="borde">
+            <h3 class="espacio">Frase 2</h3>
+            <p class="oculto espacio" id="Capi-pista2">
+              Puedo hacer esto todo el dia
+            </p>
+          </div>
+          <div>
+            <h3 class="espacio">Frase 3</h3>
+            <p class="oculto espacio" id="Capi-pista3">Vengadores Unidos!</p>
+          </div>
+        </div>
+        <button onclick="Adivinar(2)">Adivinar</button>
+        <img
+          src="https://palomaynacho.com/wp-content/uploads/2025/02/Vengadores-Unidos.jpg"
+          alt="Imagen Adivinanza 2"
+          width="400px"
+          class="oculto"
+          id="capi"
+        />
+        <p id="respuestaCapi"></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="adivinar">
+        <h1>
+          <i><u>Futbolista</u></i>
+        </h1>
+        <div class="filas">
+          <div id="borde">
+            <h3 class="espacio">Frase 1</h3>
+            <p class="espacio">
+              Yo creo que por ser guapo, rico y un gran jugador, las personas me
+              tienen envidia.
+            </p>
+          </div>
+          <div id="borde">
+            <h3 class="espacio">Frase 2</h3>
+            <p class="oculto espacio" id="CR7-pista2">
+              ¿Concentrao, Quien es ese jugador?... Coentrao!
+            </p>
+          </div>
+          <div>
+            <h3 class="espacio">Frase 3</h3>
+            <p class="oculto espacio" id="CR7-pista3">SIIIUUUUUUUUUUU!</p>
+          </div>
+        </div>
+        <button onclick="Adivinar(3)">Adivinar</button>
+        <img
+          src="https://img.uefa.com/imgml/TP/players/2014/2025/cutoff/63706.webp"
+          alt="Imagen Adivinanza 3"
+          width="230px"
+          class="oculto"
+          id="CR7"
+        />
+        <p id="respuestaCR7"></p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Ejercicios Bucles 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios con Bucles 2</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="../ejerciciosBucles/index.html">Bucles</a>
+          </li>
+          <li>
+            <a href="../ejerciciosBucles2/index.html" class="activo"
+              >Bucles 2</a
+            >
+          </li>
+          <li><a href="../ejerciciosBucles3/index.html">Bucles 3</a></li>
+          <li><a href="../ejerciciosBucles4/index.html">Bucles 4</a></li>
+          <li><a href="../ejerciciosBucles5/index.html">Bucles 5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cuerpo">
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>1. Precio Entrada</h2>
+          <label>Edad:</label>
+          <input type="number" id="edad" placeholder="Introduce tu edad" />
+          <button onclick="Entrada()">Calcular</button>
+          <p id="salidaCine"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>2. Saludo</h2>
+          <label>Hora:</label>
+          <input type="number" id="hora" placeholder="Hora de 0-23" />
+          <button onclick="Hora()">Saludar</button>
+          <p id="salidaHora"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>3. Numero Mayor y Menor</h2>
+          <label>Numero 1:</label>
+          <input type="number" id="numero1" placeholder="Introcuce un numero" />
+          <label>Numero 2:</label>
+          <input type="number" id="numero2" placeholder="Introcuce un numero" />
+          <button onclick="MayorMenor()">Calcular</button>
+          <p id="salidaMayor"></p>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>4. Palabras</h2>
+          <button onclick="Palabras()">Jugar</button>
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h2>5. Mesaje Repetido</h2>
+          <label>Euros:</label>
+          <input type="Number" id="euro" placeholder="€" />
+          <label>Moneda:</label>
+          <div class="espacios">
+            <label for="dolares">Dolares</label>
+            <input type="radio" id="dolares" name="moneda" value="Dolares" /><br><br>
+            <label for="yenes">Yenes</label>
+            <input type="radio" id="yenes" name="moneda" value="Yenes" /><br><br>
+            <label for="libras">Libras</label>
+            <input type="radio" id="libras" name="moneda" value="Libras" /><br><br>
+          </div>
+          <button onclick="Conversor()">Calcular</button>
+          <p id="salidaDinero"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
