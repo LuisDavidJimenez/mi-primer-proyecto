@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script/script.js" defer></script>
+    <title>Challenge Bloque 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Junio 19, Challenge Bloque 2</h1>
+      <a href="../Challenge/challenge.html"> Bloque 1</a>
+      <a href="../Challenge3/challenge.html"> Bloque 3</a>
+    </header>
+
+    <main>
+      <section>
+        <h1>Imagen Aleatoria</h1>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/007/126/739/non_2x/question-mark-icon-free-vector.jpg"
+          id="imagen"
+          height="200px"
+          alt="Imagen Aleatoria"
+        />
+      </section>
+
+      <section>
+        <h1>Cronometro</h1>
+        <p id="contador"></p>
+        <button id="contador" onclick="Cronometro()">Cronometrar</button>
+        <button id="rainiciarcontador" onclick="ReiniciarCronometro()">
+          Reiniciar
+        </button>
+        <button id="cancelarcontador" onclick="CancelarCronometro()">
+          Parar Contador
+        </button>
+      </section>
+
+      <section>
+        <h1>Contraseña</h1>
+        <input
+          type="password"
+          id="password"
+          placeholder="Escribe tu Contraseña"
+        />
+        <button id="VerPassword">Ver Contraseña</button>
+      </section>
+
+      <section>
+        <h1>Iniciales del Pais</h1>
+        <select id="paises" onchange="Iniciales()">
+          <option value="España">España</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Francia">Francia</option>
+          <option value="Alemania">Alemania</option>
+          <option value="Belgica">Belgica</option>
+          <option value="Holanda">Holanda</option>
+          <option value="Inglaterra">Inglaterra</option>
+          <option value="Irlanda">Irlanda</option>
+          <option value="Italia">Italia</option>
+          <option value="Dinamarca">Dinamarca</option>
+        </select>
+        <p id="inicial"></p>
+      </section>
+
+      <section>
+        <h1>Texto a Tiempo Real</h1>
+        <input type="text" id="tiemporeal" />
+        <br />
+        <h3 id="salidatiemporeal"></h3>
+      </section>
+    </main>
+  </body>
+</html>
