@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./script/script.js" defer></script>
+    <title>Practicas con Arrays</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios de Arrays</h1>
+    </header>
+
+    <main>
+      <section>
+        <div class="operaciones">
+          <div class="contenido">
+            <h2>Lista Dinamica</h2>
+            <input
+              type="text"
+              id="elementolistadinamica"
+              placeholder="Introduce un Nuevo Elemento"
+              style="width: 180px"
+            />
+            <button onclick="añadirElementos()">Introducir Elemento</button>
+            <button onclick="borrarElementos()">Eliminar Todo</button>
+            <ul id="listadinamica"></ul>
+          </div>
+        </div>
+        <div class="operaciones" id="formulario">
+          <div class="contenido">
+            <h2>Formulario</h2>
+            <form>
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                required
+                name="nombre"
+                id="nombre"
+                placeholder="Introduce tu Nombre"
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                required
+                name="email"
+                id="email"
+                placeholder="Introduce tu Correo"
+              />
+              <label for="edad">Edad</label>
+              <input
+                type="number"
+                required
+                name="edad"
+                id="edad"
+                placeholder="Introduce tu Edad"
+              />
+              <button type="submit">Enviar Informacion</button>
+              <p id="salidaForm"></p>
+            </form>
+          </div>
+        </div>
+        <div class="operaciones">
+          <div class="contenido">
+            <h2>Calculadora Total</h2>
+            <p id="dineroTotal">0.00€</p>
+            <p id="gastosTotales"></p>
+            <input type="number" id="gasto" placeholder="Introduce un Gasto" />
+            <button type="submit" onclick="calculadora()">Gasto</button>
+            <button type="submit" onclick="verGastos()">Ver Gastos</button>
+          </div>
+        </div>
+
+        <div class="operaciones">
+          <div class="contenido">
+            <h2>Galeria Imagenes</h2>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPbK5diMfSfz9BCCUkic4iv2-_dBBUF5mC6Q&s"
+              alt="Imagenes Aleatorias"
+              id="imagenes"
+            /><br />
+            <button type="submit" id="atras" onclick="pasarImagen('atras')">
+              <
+            </button>
+            <button type="submit" id="delante" onclick="pasarImagen('delante')">
+              >
+            </button>
+          </div>
+        </div>
+        <div class="operaciones">
+          <div class="contenido">
+            <h2>Clima en Ciudad</h2>
+            <input type="text" id="ciudad" placeholder="Introduce una Ciudad" />
+            <button onclick="Temporal()">Ver Temporal</button>
+            <div class="centro">
+              <p id="salidaTemperatura"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

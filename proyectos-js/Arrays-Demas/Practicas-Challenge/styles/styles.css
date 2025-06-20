@@ -40,7 +40,7 @@ nav ul li a {
   pointer-events: none;
 }
 
-.cuerpo {
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,7 +57,7 @@ nav ul li a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.contenido {
+.contenido, form {
   display: flex;
   flex-direction: column;
 }
@@ -98,4 +98,12 @@ nav ul li a:hover {
   margin-top: 10px;
   color: rgb(59, 59, 138);
   font-weight: bold;
+}
+
+#imagenes {
+    height: 300px;
+}  
+
+.centro {
+    text-align: center;
 }

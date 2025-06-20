@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styes.css" />
+    <script src="./script/script.js" defer></script>
+    <title>Funciones Bloque 1</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios Funciones</h1>
+      <nav>
+        <ul>
+          <li class="activo"><a href="./index.html"> Funciones 1</a></li>
+          <li><a href="../Challenge2/index.html"> Funciones 2</a></li>
+          <li><a href="../Challenge3/index.html"> Funciones 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Calculadora de Descuento</h1>
+          <input
+            type="number"
+            id="precio"
+            placeholder="Precio del Producto en €"
+          />
+          <input
+            type="number"
+            id="descuento"
+            placeholder="Descuento del Producto (%)"
+          />
+          <button class="botondesc" onclick="Descuento()">Aplicar</button>
+          <p id="SalidaDescuento"></p>
+        </div>
+      </div>
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Calculador de IMC</h1>
+          <input type="number" id="peso" placeholder="Cantidad en Kg" />
+          <input type="number" id="alturaMasa" placeholder="Altura en cm" />
+          <button class="botondesc" onclick="IndiceMasa()">Convertir</button>
+          <p id="salidaIMC"></p>
+        </div>
+      </div>
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Carrito de compra</h1>
+          <div>
+            <ul id="Lista"></ul>
+          </div>
+
+          <input type="text" id="productoId" placeholder="Producto a añadir" />
+          <button class="anadir" onclick="Entra()">Añadir</button>
+          <button class="eliminartodo" onclick="BorrarTodo()">
+            Eliminar Todo
+          </button>
+        </div>
+      </div>
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Temporizador</h1>
+          <input
+            type="number"
+            id="segundos"
+            placeholder="Segundos del Temporizador"
+          />
+          <button onclick="Temporizador()">Temporizar</button>
+          <p id="contador"></p>
+        </div>
+      </div>
+      <div class="operaciones" id="fondocolor">
+        <div class="contenido">
+        <h1>Cambiar Color de Fondo</h1>
+        <input type="color" id="selectorColor">
+      </div>
+    </section>
+  </body>
+</html>

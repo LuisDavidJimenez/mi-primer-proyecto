@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script/script.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Funciones Bloque 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios Funciones 2</h1>
+      <nav>
+        <ul>
+          <li><a href="../Challenge/index.html"> Funciones 1</a></li>
+          <li class="activo"><a href="./index.html"> Funciones 2</a></li>
+          <li><a href="../Challenge3/index.html"> Funciones 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Imagen Aleatoria</h1>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/007/126/739/non_2x/question-mark-icon-free-vector.jpg"
+            id="imagen"
+            height="200px"
+            alt="Imagen Aleatoria"
+          />
+        </div>
+      </div>
+
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Cronometro</h1>
+          <p id="contador"></p>
+          <button id="contador" onclick="Cronometro()">Cronometrar</button>
+          <button id="rainiciarcontador" onclick="ReiniciarCronometro()">
+            Reiniciar
+          </button>
+          <button id="cancelarcontador" onclick="CancelarCronometro()">
+            Parar Contador
+          </button>
+        </div>
+      </div>
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Contraseña</h1>
+          <input
+            type="password"
+            id="password"
+            placeholder="Escribe tu Contraseña"
+          />
+          <button id="VerPassword">Ver Contraseña</button>
+        </div>
+      </div>
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Iniciales del Pais</h1>
+          <select id="paises" onchange="Iniciales()">
+            <option value="España">España</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Francia">Francia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Belgica">Belgica</option>
+            <option value="Holanda">Holanda</option>
+            <option value="Inglaterra">Inglaterra</option>
+            <option value="Irlanda">Irlanda</option>
+            <option value="Italia">Italia</option>
+            <option value="Dinamarca">Dinamarca</option>
+          </select>
+          <p id="inicial"></p>
+        </div>
+      </div>
+      <div class="operaciones">
+        <div class="contenido">
+          <h1>Texto a Tiempo Real</h1>
+          <input type="text" id="tiemporeal" />
+          <br />
+          <h3 id="salidatiemporeal"></h3>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

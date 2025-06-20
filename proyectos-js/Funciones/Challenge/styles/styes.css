@@ -9,7 +9,7 @@ body {
 
 header h1 {
   text-align: center;
-  color: rgb(161, 133, 57);
+  color: rgb(57, 57, 161);
   margin: 20px 20px 10px 20px;
 }
 
@@ -24,23 +24,21 @@ nav ul {
 }
 
 nav ul li {
-    margin: 5px 0px;
+  background-color: rgb(30, 30, 124);
+  padding: 5px 10px;
 }
 
 nav ul li a {
-  background-color: rgb(254, 178, 78);
-  padding: 5px 10px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .activo {
-  background-color: orange;
-  color: white;
+  background-color: blue;
   pointer-events: none;
 }
 
-.cuerpo {
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,7 +61,7 @@ nav ul li a {
 }
 
 .contenido h2 {
-  color: rgb(87, 167, 76);
+  color: rgb(76, 76, 167);
 }
 
 .contenido label {
@@ -82,22 +80,19 @@ nav ul li a {
   height: 40px;
   font-size: 1rem;
   border-radius: 5px;
-  color: black;
+  color: white;
   border: none;
-  background-color: rgb(254, 201, 78);
+  background-color: rgb(109, 109, 255);
 }
 
-.contenido button:hover,
-nav ul li a:hover {
+.contenido button:hover, nav ul li:hover {
   cursor: pointer;
-  background-color: orange;
-  color: white;
+  background-color: blue;
   transition: background, 0.6s ease;
-  transition: color, 0.6s ease;
 }
 
 .contenido p {
   margin-top: 10px;
-  color: rgb(138, 110, 59);
+  color: rgb(59, 59, 138);
   font-weight: bold;
 }
