@@ -1,0 +1,68 @@
+section {
+    margin: 0 auto;
+    max-width: 600px;
+    border: 2px solid black;
+}
+
+form {
+    padding: 20px;
+}
+
+#formularioVariasPaginas h2 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+
+#formularioVariasPaginas h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.botonContra {
+  position: relative;
+}
+
+input {
+  width: 98%;
+}
+
+label {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#verContra  {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#verContra .activo {
+  background-color: #ccc;
+}
+
+.posiciones {
+    margin-top: 15px;
+}
+
+.checkbox {
+    display: inline-flex;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+}
+
+.checkbox label {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.checkbox input {
+    width: 50px;
+}

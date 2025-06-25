@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script/script.js" defer></script>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Heladeria</title>
+  </head>
+  <body onload="iniciar()">
+    <h1>Bienvenido a mi Heladeria!</h1>
+    <div id="cargando">
+      <p>
+        Cargando... <br />
+        <img src="./img/cargando.gif" alt="Cargando" width="200" height="150" />
+      </p>
+    </div>
+    <div id="despuesCargando" class="oculto">
+      <p>
+        Aquí encontraras los siguientes tipos de Helado! <br />
+        Elige el que más te guste!
+        <br />
+      </p>
+      <span>🍧🍨🍦</span>
+      <div class="botones">
+        <button onclick="pedirHelado()">🍧 Helado 🍧</button>
+        <button onclick="pedirHelado2(entregarHelado)">🍨 Helado 🍨</button>
+        <button onclick="pedirHelado3()">🍦 Helado 🍦</button>
+      </div>
+      <div class="resena">
+        <div class="texto">
+          <blockquote id="testimonios" class="textoresena"></blockquote>
+          <div class="infotestimonio">
+            <p id="clasif" class="clasif">aaa</p>
+            <p id="autor" class="autor"></p>
+          </div>
+        </div>
+        <div class="botonesCarrusel">
+          <button id="pause" onclick="stopCarousel()">Pausar</button>
+          <button id="resume">Reanudar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

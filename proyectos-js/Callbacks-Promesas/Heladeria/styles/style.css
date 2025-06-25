@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('../img/fondo.png');
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+span {
+    font-size: 3.5rem;
+    background-color: rgb(0, 64, 255);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botones button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.botones button:hover, .botonesCarrusel button:hover {
+    cursor: pointer;
+}
+
+.oculto {
+    display: none;
+}
+
+.autor {
+    font-style: italic;
+    color: rgb(58, 58, 58);
+    text-align: end;
+}
+
+.botonesCarrusel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botonesCarrusel button {
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: 2px solid brown;
+    background-color: #5c330a;
+    color: white;
+}
+
+.resena {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    border: 1px solid black;
+    background-color: #d8ae7c;
+}
+
+.resena .texto {
+    border: 1px solid brown;
+    background-color: #f1d7b8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.textoresena {
+    font-size: 1.3rem;
+    color: black;
+    text-align: justify;
+}
+
+.infotestimonio {
+    display: flex;
+    justify-content: space-between;
+}

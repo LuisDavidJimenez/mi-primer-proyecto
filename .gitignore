@@ -1,4 +1,4 @@
 #Archivos y carpetas ignorados por Git
 carpeta-ignorada/
-
+proyectos-js/Callbacks-Promesas/ejemplo
 *.log

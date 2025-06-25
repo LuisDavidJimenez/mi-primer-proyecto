@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./script/script.js" defer></script>
+    <title>Formularios</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios de Formulario</h1>
+    </header>
+
+    <main>
+      <section>
+        <form id="formularioVariasPaginas">
+          <h2>Formulario Multi-Paso</h2>
+          <div class="page" id="page1">
+            <h3><i>Datos Personales</i></h3><hr>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required />
+            <br><br>
+            <label for="Perfil">Foto de Perfil:</label>
+            <img id="vista" src="" alt="Previsualizar Foto" style="max-width: 150px; display: none;">
+            <input type="file" name="Perfil" id="fotoPerfil" accept="image/*">
+            <button class="posiciones" type="button" disabled>Anterior</button>
+            <button class="posiciones" type="button" onclick="nextPage(2)">Siguiente</button>
+          </div>
+
+          <div class="page" id="page2" style="display: none">
+            <h3><i>Cuenta</i></h3><hr>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br><br>
+            <label for="contra">Constraseña:</label>
+            <div class="botonContra">
+              <input type="password" id="password" name="contra" oninput="comprobarContrasena()" />
+              <button id="verContra" onmousedown="mostrarContra('password')" onmouseup="ocultarContra('password')">
+                Ver contraseña
+              </button>
+            </div>
+            <br>
+            <label for="contraConfi">Confirma Constraseña:</label>
+            <div class="botonContra">
+              <input type="password" id="passwordConfi" name="contraConfi" oninput="comprobarContrasena()"/>
+              <button id="verContra" onmousedown="mostrarContra('passwordConfi')" onmouseup="ocultarContra('passwordConfi')">
+                Ver contraseña
+              </button>
+            </div>
+            <div id="mensajeContrasena"></div>
+            <button class="posiciones" type="button" onclick="nextPage(1)">Anterior</button>
+            <button class="posiciones" type="button" onclick="nextPage(3)">Siguiente</button>
+          </div>
+
+          <div class="page" id="page3" style="display: none">
+            <h3><i>Contacto</i></h3><hr>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="(123) 456-789" maxlength="13" />
+            <br><br>
+            <label for="direccion">Cuidad:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Introduce tu Cuidad"/>
+            <ul id="ciudades"></ul>
+            <br>
+            <button class="posiciones" type="button" onclick="nextPage(2)">Anterior</button>
+            <button class="posiciones" type="button" onclick="nextPage(4)">Siguiente</button>
+          </div>
+
+          <div class="page" id="page4" style="display: none">
+            <h3><i>Confirmacion de Datos</i></h3><hr>
+            <p id="SalidaDatos"></p>
+            <div class="checkbox">
+                <input type="checkbox" name="aceptardatos" id="aceptardatos" required>
+                <label for="aceptardatos">Confirma y Comprueba los Datos</label>
+            </div>
+            <p id="mensajeDatos"></p>
+            <button class="posiciones" type="button" onclick="nextPage(3)">Anterior</button>
+            <button type="submit" onclick="comprobarDatos()">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
