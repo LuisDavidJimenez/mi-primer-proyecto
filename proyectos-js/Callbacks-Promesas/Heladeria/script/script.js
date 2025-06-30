@@ -1,9 +1,9 @@
 function iniciar() {
-  // setTimeout(() => {
+  setTimeout(() => {
   document.getElementById("cargando").classList.add("oculto");
   document.getElementById("despuesCargando").classList.remove("oculto");
   startCarousel();
-  // }, 4000);
+  }, 4000);
 }
 
 // Presentacion Heladeria

@@ -8,7 +8,7 @@ function iniciar() {
 
 // Contador para que al final de su tiempo recargue la pagina
 function cargarContador() {
-  let conta = 100;
+  let conta = 903000;
   const cuentaAtras = setInterval(() => {
     if (conta <= 0) {
       clearInterval(cuentaAtras);
